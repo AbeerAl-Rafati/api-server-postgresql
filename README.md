@@ -1,12 +1,12 @@
-# api-server
+# api-server-postgresql
 
 
 *Auther: Abeer Rafati*
 
-**This app to explain how to creat a server and added it to db and test it for deployment(Heroku)**   
+**This app to explain how to creat a server with postgresql database and added it to db and test it for deployment(Heroku)**   
 
-[Produchion deployment](https://class04.herokuapp.com/)    
-[Pull req](https://github.com/AbeerAl-Rafati/api-server/pull/2)   
+[Produchion deployment](https://class9-sql.herokuapp.com/)    
+[Pull req](https://github.com/AbeerAl-Rafati/api-server-postgresql)   
 
 
 
@@ -16,11 +16,7 @@
 - to download all dependencies used in this app, use in terminal 
 > `npm i` 
 - to run the server use in terminal  
-> `nodemon` 
-> try to use `api/v1/food` and `api/v1/clothes` to show data
-- to run test it use in termintl 
-> `npm test`    
-
+> `nodemon`    
 
 
 
