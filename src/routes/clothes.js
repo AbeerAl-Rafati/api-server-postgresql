@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 // const clothesModel = require('../models/clothes');
 const Interface = require("../models/interface");
-const clothes = new Interface("clothes");
+const clothes = new Interface(`clothes`);
 
 router.get("/", getClothes);
 router.get("/:id", getClothes);

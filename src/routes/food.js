@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 // const foodModel = require('../models/food');
 const Interface = require("../models/interface");
-const foods = new Interface("food");
+const foods = new Interface(`food`);
 
 router.get("/", getFood);
 router.get("/:id", getFood);
