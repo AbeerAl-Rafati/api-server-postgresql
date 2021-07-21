@@ -1,17 +1,15 @@
+"use strict";
+require("dotenv").config();
+const server = require("./src/server");
+const PORT = process.env.PORT || 4000;
 
-'use strict';
-require('dotenv').config();
-const server = require('./src/server');
-const PORT = process.env.port || 3000;
+const pool = require("./src/models/pool");
 
-const pool = require('./src/models/pool');
-
-pool.connect()
+pool
+  .connect()
   .then(() => {
-    server.start(PORT)
+    server.start(PORT);
   })
   .catch((e) => {
-    console.error('CONNECTION ERROR', e.message);
+    console.error("CONNECTION ERROR", e.message);
   });
-
-
